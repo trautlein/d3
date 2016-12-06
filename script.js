@@ -1,9 +1,9 @@
 var dataset = [5, 10, 15, 20, 25];
 
-d3.select('body').selectAll('p')
+d3.select('body').selectAll('div')
   .data(dataset)
   .enter()
-  .append('p')
-  .text(d => `I can count up to ${d}`)
-  .style('color', d => d > 15 ? 'red' : 'black');
+  .append('div')
+  .attr('class', 'bar')
+  .style('height', d => d * 5 + 'px');
 
