@@ -1,11 +1,13 @@
-var dataset = [25, 7, 5, 26, 11, 8, 25, 14, 23, 19,
-  14, 11, 22, 29, 11, 13, 12, 17, 18, 10,
-  24, 18, 25, 9, 3];
+var dataset = [5, 10, 15, 20, 25];
 
-d3.select('body').selectAll('div')
-  .data(dataset)
-  .enter()
-  .append('div')
-  .attr('class', 'bar')
-  .style('height', d => d * 5 + 'px');
+var svg = d3.select('body').append('svg');
+
+var circles = svg.selectAll('circle')
+                 .data(dataset)
+                 .enter()
+                 .append('circle');
+
+circles.attr('cx', (d, i) => i * 50 + 25)
+       .attr('cy', 25)
+       .attr('r', d => d);
 
