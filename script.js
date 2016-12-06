@@ -35,5 +35,11 @@ svg.selectAll('text')
   })
   .attr('font-family', 'sans-serif')
   .attr('font-size', '11px')
-  .attr('fill', 'white');
+  .attr('fill', 'white')
+  .attr('text-anchor', 'middle')
+  .attr('x', (d, i) => {
+    const temp = w / dataset.length;
+    return i * temp + (temp - barPadding) / 2;
+  })
+  .attr('y', d => h - (d * 4) + 14);
 
