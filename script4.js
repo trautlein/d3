@@ -45,3 +45,10 @@ svg.selectAll("text")
   .attr("font-family", "sans-serif")
   .attr("font-size", "11px")
   .attr("fill", "red");
+
+d3.select('.axis')
+  .call(d3.svg.axis()
+    .scale(x)
+    .orient('bottom'));
+
+

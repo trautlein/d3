@@ -5,3 +5,15 @@ div.bar {
   background-color: teal;
   margin-right: 2px;
 }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
