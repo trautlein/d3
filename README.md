@@ -1,1 +1,1 @@
-A repository where I will host my D3 data examples as I learn more about the technology.
+A repository where I will host my D3 data examples as I learn more about the technology. A number of examples here are from Scott Murray's tutorial, available [here](http://alignedleft.com/tutorials/d3/).
